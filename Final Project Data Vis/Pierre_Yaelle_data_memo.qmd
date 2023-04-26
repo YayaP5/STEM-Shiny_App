@@ -1,0 +1,44 @@
+---
+title: "Final Project Data Memo"
+subtitle: "Data Visualization (STAT 302)"
+author: "Yaelle Pierre"
+
+format:
+  html:
+    toc: true
+    embed-resources: true
+    code-fold: show
+    link-external-newwindow: true
+    
+execute:
+  warning: false
+  message: false
+  
+from: markdown+emoji 
+---
+
+## Data Memo
+
+The goal of this file is to state and describe the dataset of my choosing for the final project of my data visualization class in R.
+
+## Data Source
+
+### Data citation 
+The data we will be using is the 'Levels_Fyi_Salary_Data.csv' that was obtained from the dataset finder kaggle.com. The link to the data can be found below.
+
+### Link to dataset
+[Levels_Fyi_Salary_Data](https://www.kaggle.com/datasets/jackogozaly/data-science-and-stem-salaries?resource=download)
+
+## Why this Data
+
+This dataset contains 62,642 salary records from top companies. There are 29 variables in this data set including company, level, title, location, race, gender, and etc. The reason I choose this data is because I am interested in data science. It is my major, and my primary contender for what I want to do as a career. I am interested in the salary that a data scientist gets, and the differences between the variations of job titles- especially data scientist vs data analysis. As a black woman, I am also interested in how race and gender factors into this field. 
+
+### Visualization plan
+
+I want to challenge myself by making a application/dashboard or an animated visual. I want to in a sense tell a visual story based off the data that I have. This may require some more data analysis because some of the visuals may not correlate to the story I am trying to do.
+
+### Initial data issues
+
+Although this data set doesn't only contain data containing the job title data scientist, but other titles such as software engineer, depending on the amount of observations for data scientist/data analyst, I may choose to remove or include all of the observations. I've already taken the liberty of loading the csv file into a format compatible with R, however more cleaning will probably need to occur. For one, there seems to be multiple columns for race, in which an integer '0-1' is used to identify if they are part of that race. If I want to see how race factors into the other variables, I may decide to combine them into one race column and change the numerical observations into a string name for the race. Moreover, there's a 'level' column in the data set, in which I cant seem to grasp what the individual observations are representing. I may have to do more research into figuring out what that may represent. There are additional variables that I don't understand what the corresponding observations represent. I may also consider removing the NA values from 'race', 'gender', and 'education' because there seems to be quite a lot of them, however I'll have to figure out what those NA values mean, and how removing them may affect the data set. Additionally, there are 0's as observations for some of the baseline salaries. I may want to remove those, after I figure out why those are zero. It doesn't currently make sense to me. Furthermore, some company names are the same, but written differently (ex- ibm vs IMB). I may need to go through these observations and mutate the data set so that they will be considered the same thing when I am conducting analysis within the data set. I may also choose to combine the locations into different states, instead of the current way which includes the region and the state. 
+
+
